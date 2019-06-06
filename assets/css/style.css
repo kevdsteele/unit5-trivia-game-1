@@ -1,0 +1,64 @@
+@font-face {
+font-family: "Avengence Heroic Avenger AT";
+
+ src: url("../fonts/avengeance-heroic-avenger/AVENGEANCE-HEROIC-AVENGER-AT.ttf") format("truetype");
+
+}
+
+@font-face {
+    font-family: "Avengence Heroic Avenger BD";
+    
+     src: url("../fonts/avengeance-heroic-avenger/AVENGEANCE-HEROIC-AVENGER-BD.ttf") format("truetype");
+    
+    }
+
+    @font-face {
+        font-family: "Avengence Heroic Avenger BI";
+        
+         src: url("../fonts/avengeance-heroic-avenger/AVENGEANCE-HEROIC-AVENGER-BI.ttf") format("truetype");
+        
+        }
+
+   
+
+@font-face{
+font-family: "Aviano Black";
+src: url("../fonts/AvianoBlack/Aviano-Black.otf") format("opentype");
+
+}
+
+
+#header {
+font-family: "Avengence Heroic Avenger AT", Arial, Helvetica, sans-serif;
+font-size:5vw;
+color: white;
+text-shadow: 4px 4px 4px darkred;
+
+
+
+}
+
+.centered {
+
+position:absolute;
+top: 30%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+}
+
+body{
+font-family: "Aviano Black";
+font-size: 12px;
+
+}
+
+#bkgVid {
+position:fixed;
+right:0;
+bottom:0;
+min-width:1440px;
+min-height:100%;
+}
+
+

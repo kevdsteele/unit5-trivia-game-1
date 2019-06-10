@@ -9,18 +9,16 @@ var questions = [ {Question: "Which MCU movie featured Spider-Man’s first appe
 
 
 for (i=0; i<questions.length; i++) {
-    var questionText = $("<div>");
+    var questionText = $("<p>");
     questionText.attr("id", "question"+i);
     questionText.text(questions[i].Question);
-    $("#question").append(questionText);
+    $("#questionForm").append(questionText);
     
     console.log(questions[i].Question);
     for (j=0; j < questions[i].choices.length; j++) {
-    var questionChoice = $("<form></form>");
-    questionChoice.attr("input type", "radio");
-    questionChoice.attr("name", "question"+i);
-    questionChoice.attr("value",questions[i].choices[j] );
-    $("#question"+i).append(questionChoice);
+    var questionChoice = $('<input type ="radio" name ="' + i + '" value="' + questions[i].choices[j] + '">');
+  
+    $("#questionForm).append(questionChoice);
 
     console.log(questions[i].choices[j]);}
 

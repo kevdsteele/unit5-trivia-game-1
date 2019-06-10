@@ -24,10 +24,10 @@ for (i=0; i<questions.length; i++) {
   
   
   
-$("#submit").on("Click", function() {
+$("#submit").on("click", function() {
   
-  var radioVal0 =  $("input[name=q0]:checked").val();
-  console.log("Your answer to Question 1 was" + radioVal0);
+  var radioVal =  $("input[name=q0]:checked").val();
+  console.log("Your answer to Question 1 was" + radioVal);
 
   
   

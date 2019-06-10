@@ -16,15 +16,14 @@ for (i=0; i<questions.length; i++) {
     
     console.log(questions[i].Question);
     for (j=0; j < questions[i].choices.length; j++) {
-    var questionInput = $('<input type ="radio" name ="' + i + '" value="' + questions[i].choices[j] + '">');
+    var questionInput = $('<input type ="radio" name ="' + i + '" value="' + questions[i].choices[j] + '">' + questions[i].choices[j] +');
     questionInput.attr("id", "choice"+i);
-    var questionChoice =$("<div>");
-    questionChoice.html(questions[i].choices[j] + "<br>");
+
     
                           
   
     $("#questionForm").append(questionInput);
-    $("#choice"+i).append(questionChoice);
+
                           
 
     console.log(questions[i].choices[j]);}

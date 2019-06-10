@@ -18,7 +18,7 @@ for (i=0; i<questions.length; i++) {
     for (j=0; j < questions[i].choices.length; j++) {
     var questionChoice = $('<input type ="radio" name ="' + i + '" value="' + questions[i].choices[j] + '">');
   
-    $("#questionForm).append(questionChoice);
+    $("#questionForm").append(questionChoice);
 
     console.log(questions[i].choices[j]);}
 

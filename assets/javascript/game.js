@@ -27,7 +27,7 @@ for (i=0; i<questions.length; i++) {
 $("#submit").on("click", function() {
   
   for (i=0; i < 4; i++) {
-    var radioVal = $("input[name='q' + i +']:checked").val();
+    var radioVal = $('input[name="q"' + i +']:checked').val();
     console.log("Your answer to Question " + i + " was " + radioVal);
   }
   

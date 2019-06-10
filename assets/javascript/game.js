@@ -16,7 +16,7 @@ for (i=0; i<questions.length; i++) {
     
     console.log(questions[i].Question);
     for (j=0; j < questions[i].choices.length; j++) {
-    var questionInput = $('<input type ="radio" name ="' + i + '" value="' + questions[i].choices[j] + '">' + questions[i].choices[j] + '</input><br/>');
+    var questionInput = $('<input type ="radio" name ="' + 'q'+ i + '" value="' + questions[i].choices[j] + '">' + questions[i].choices[j] + '</input><br/>');
     questionInput.addClass("choices");
     
                           

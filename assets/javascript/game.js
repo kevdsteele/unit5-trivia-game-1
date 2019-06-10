@@ -23,27 +23,7 @@ for (i=0; i<questions.length; i++) {
 }
   
   
-function recordAnswers () {
 
-  for (i=0; i<questions.length; i++) { 
-      var questionID = $("#q"+i);
-      for (j=0; j<4; j++) {
-        if (questionID[j].checked === true) {
-          console.log("Your answer to question " + i + " was " + questionID[j].value);
-          
-        }
-        
-      /*End inner for loop*/
-      }
-    
-    
-    
-   /*End outer for loop */ 
-  }
-
-
-
-};
 
 
 });

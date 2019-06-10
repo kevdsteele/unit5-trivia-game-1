@@ -5,7 +5,7 @@ var questions = [ {Question: "Which MCU movie featured Spider-Man’s first appe
                  {Question: "What is the name of Thor’s hammer?", choices: ["Balder","Vanir", "Aesir", "Mjolnir"], Answer: "Mjolnir", GIFY: "https://media.giphy.com/media/xUPGGdn5TaL8Mfpwwo/giphy.gif"},
                  {Question: "Where did Scott Lang work before becoming Ant-Man?", choices: ["Jamba Juice","Chipotle", "McDonald’s", "Baskin Robbins"], Answer: "Baskin Robbins", GIF:"https://media.giphy.com/media/VIybTqiAz8E5W/giphy.gif"}]
 
-
+var answers = [];
 
 
 for (i=0; i<questions.length; i++) {
@@ -18,17 +18,32 @@ for (i=0; i<questions.length; i++) {
     for (j=0; j < questions[i].choices.length; j++) {
     var questionInput = $('<input type ="radio" name ="' + 'q'+ i + '" value="' + questions[i].choices[j] + '">' + questions[i].choices[j] + '</input><br/>');
     questionInput.addClass("choices");
-    
-                          
-  
     $("#questionForm").append(questionInput);
-
-                          
-
     console.log(questions[i].choices[j]);}
-
-
 }
+  
+  
+function recordAnswers () {
+
+  for (i=0; i<questions.length; i++) { 
+      var questionID = $("#q"+i);
+      for (j=0; j<4; j++) {
+        if (questionID[j].checked === true) {
+          console.log("Your answer to question " + i + " was " + questionID[j].value);
+          
+        }
+        
+      /*End inner for loop*/
+      }
+    
+    
+    
+   /*End outer for loop */ 
+  }
+
+
+
+};
 
 
 });

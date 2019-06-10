@@ -23,6 +23,16 @@ for (i=0; i<questions.length; i++) {
 }
   
   
+  
+$("#submit").on("Click", function() {
+  console.log("Your answer to Question 1 was" + $("input[name=q0]:checked").val();
+console.log("Your answer to Question 2 was" + $("input[name=q1]:checked").val();
+   console.log("Your answer to Question 3 was" + $("input[name=q2]:checked").val();
+                console.log("Your answer to Question 4 was" + $("input[name=q3]:checked").val();
+  
+  
+});
+  
 
 
 

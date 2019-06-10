@@ -17,7 +17,8 @@ for (i=0; i<questions.length; i++) {
     console.log(questions[i].Question);
     for (j=0; j < questions[i].choices.length; j++) {
     var questionChoice = $("<form></form>");
-    questionChoice.attr("type", "radio");
+    questionChoice.attr("input type", "radio");
+    questionChoice.attr("name", "question"+i);
     questionChoice.attr("value",questions[i].choices[j] );
     $("#question"+i).append(questionChoice);
 

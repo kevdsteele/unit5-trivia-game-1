@@ -82,11 +82,20 @@ overflow:auto;
 }
 
 .question {
-font-size:28px;
+font-size:30px;
+margin-bottom:5px;
+text-align:center;
+width:100%;
 }
 
 .choices {
-font-size:32px;
+font-size:24px;
+text-align:left;
+display:inline-block;
+width: auto;
+
+
 }
+
 
 

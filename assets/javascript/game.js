@@ -13,17 +13,26 @@ var unaswered =0;
 
 
 for (i=0; i<questions.length; i++) {
-    var questionText = $("<p>");
+  
+  var questionText = $("<div>");
     questionText.attr("id", "question"+i);
     questionText.addClass("question");
     questionText.text(questions[i].Question);
     $("#questionForm").append(questionText);
+    var choicesDiv=$("<div>");
+    choicesDiv.addClass("choices");
+    choicesDiv.attr("id", "question-choices"+i);
+    $("#question"+i).append(choicesDiv);
+   
     
     console.log(questions[i].Question);
     for (j=0; j < questions[i].choices.length; j++) {
-    var questionInput = $('<input type ="radio" name ="' + 'q'+ i + '" value="' + questions[i].choices[j] + '">' + questions[i].choices[j] + '</input><br/>');
-    questionInput.addClass("choices");
-    $("#questionForm").append(questionInput);
+  
+      var questionInput = $('<input type ="radio" name ="' + 'q'+ i + '" value="' + questions[i].choices[j] + '">' + questions[i].choices[j] + '</input><br/>');
+    
+
+    
+    $("#question-choices"+i).append(questionInput);
     console.log(questions[i].choices[j]);}
 }
   

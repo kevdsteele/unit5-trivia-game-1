@@ -30,23 +30,27 @@ src: url("../fonts/AvianoBlack/Aviano-Black.otf") format("opentype");
 
 #header {
 font-family: "Avengence Heroic Avenger AT", Arial, Helvetica, sans-serif;
-font-size:4vw;
-height:50%;
+text-align:center;
+font-size:26px;
 color: white;
 text-shadow: 4px 4px 4px darkred;
+background-color:blue;
+margin-bottom:5px;
+height:100px;
+border:1px solid black;
 
 
 
 }
 
-.centered {
+/* .centered {
 
 position:absolute;
 top: 35%;
 left: 50%;
 transform: translate(-50%, -50%);
 
-}
+} */
 
 body{
 font-family: "Aviano Black";
@@ -67,17 +71,30 @@ margin-right:auto;
 
 #timer-header {
 border:1px solid black;
+background-color:blue;
+margin-bottom:5px;
 height:100px;
 text-align:center;
-font-size:32px;
+font-size:26px;
 
 }
 
+#footer {
+height:100px;
+text-align:center;
+margin-top:5px;
+background-color:blue;
+font-size:26px;
+color:white;
+}
+
 #questionForm {
-height:400px;
+height:550px;
+
 border:1px solid black;
 text-align: center;
-
+background-color:white;
+font-size:26px;
 overflow:auto;
 }
 
@@ -109,3 +126,12 @@ width:100px;
 }
 
 
+#results{
+position:relative;
+top: 40%;
+
+}
+
+.center-results {
+
+}

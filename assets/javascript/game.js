@@ -12,12 +12,39 @@ var answers = [];
 
 var correct=0;
 var incorrect =0;
-var unaswered =0;
+var unanswered =0;
+
+var timer=15;
+var timerId;
 
 
-$("#play").on("click", function playGame () {
+
+
+$("#play").on("click", playGame);
+
+
+
+function playGame () {
+
+clearInterval(timerId);
+timerId = setInterval(countdown, 1000);
+
+function countdown () {
+  timer--;
+
+  $("#timer").text(timer);
+
+  if (timer === 0) {
+    
+    clearInterval(timerId);
+    endGame();
+    
+  }
+
+}
 
 $("#questionForm").empty();  
+
 
 for (i=0; i<questions.length; i++) {
   var questionDiv =$("<div>");
@@ -47,7 +74,11 @@ for (i=0; i<questions.length; i++) {
   
   
   
-$("#submit").on("click", function() {
+$("#submit").on("click", endGame);
+
+function endGame() {
+
+clearInterval(timerId);
   
   for (i=0; i < questions.length; i++) {
 
@@ -59,23 +90,42 @@ $("#submit").on("click", function() {
         correct++;
         console.log("Your answer was correct");
     } else if (radioVal === undefined) {
-        unaswered++
+        unanswered++
     } else {
       incorrect++;
     }
   }
   
   console.log(answers);
+
+var resultDiv=$("<div>");
+resultDiv.attr("id", "results")
+
+var correctDiv =$("<div>");
+correctDiv.addClass("center-results");
+var incorrectDiv=$("<div>");
+incorrectDiv.addClass("center-results");
+var unansweredDiv=$("<div>");
+unansweredDiv.addClass("center-results");
+
+
+correctDiv.text("You answered " + correct+ " correct");
+incorrectDiv.text("You answered " + incorrect+ " incorrect");
+unansweredDiv.text("You did not answer " + unanswered + " questions");
+$("#questionForm").empty();
+$("#questionForm").append(resultDiv);
+$("#results").append(correctDiv, incorrectDiv, unansweredDiv);
+
   
  console.log("Correct " + correct);
  console.log("Incorrect " + incorrect);
- console.log("Unaswered "+ unaswered);
+ console.log("Unaswered "+ unanswered);
   
   
-});
+};
   
 
-});
+};
 
 
 

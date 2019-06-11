@@ -76,7 +76,7 @@ font-size:32px;
 #questionForm {
 height:400px;
 border:1px solid black;
-text-align:center;
+text-align: center;
 
 overflow:auto;
 }
@@ -90,12 +90,16 @@ width:100%;
 
 .choices {
 font-size:24px;
-text-align:left;
-display:inline-block;
-width: auto;
+
+
+width:100;
+padding: 10px 0px 10px 0px;
 
 
 }
 
+.radio {
+height:25px;
+}
 
 

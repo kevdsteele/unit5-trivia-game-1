@@ -13,12 +13,14 @@ var unaswered =0;
 
 
 for (i=0; i<questions.length; i++) {
-  
+  var questionDiv =$("<div>");
+  questionDiv.attr("id", "question"+i);
   var questionText = $("<div>");
-    questionText.attr("id", "question"+i);
-    questionText.addClass("question");
+    questionText.attr("id", "question-text"+i);
+    questionDiv.addClass("question");
     questionText.text(questions[i].Question);
-    $("#questionForm").append(questionText);
+    $("#questionForm").append(questionDiv);
+    $("#question"+i).append(questionText);
     var choicesDiv=$("<div>");
     choicesDiv.addClass("choices");
     choicesDiv.attr("id", "question-choices"+i);
@@ -29,7 +31,7 @@ for (i=0; i<questions.length; i++) {
     for (j=0; j < questions[i].choices.length; j++) {
   
       var questionInput = $('<input type ="radio" name ="' + 'q'+ i + '" value="' + questions[i].choices[j] + '">' + questions[i].choices[j] + '</input><br/>');
-    
+    questionInput.addClass("radio");
 
     
     $("#question-choices"+i).append(questionInput);

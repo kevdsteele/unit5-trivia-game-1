@@ -131,6 +131,26 @@ top: 40%;
 
 }
 
-.center-results {
+#timer {
+padding-top:10px;
+padding-bottom:10px;
+}
 
+button {
+font-size:20px;
+}
+
+#submit{
+display:none;
+}
+
+#title {
+padding-bottom:20px;
+}
+
+#logo{
+    height:200px;
+    
+padding-top:40px;
+padding-bottom:40px;
 }

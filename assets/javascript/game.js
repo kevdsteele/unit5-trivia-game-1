@@ -36,6 +36,7 @@ $("#play").on("click", playGame);
 
 
 function playGame () {
+$("#submit").css("display", "inline-block");
 
 clearInterval(timerId);
 timerId = setInterval(countdown, 1000);

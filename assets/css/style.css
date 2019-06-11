@@ -32,25 +32,25 @@ src: url("../fonts/AvianoBlack/Aviano-Black.otf") format("opentype");
 font-family: "Avengence Heroic Avenger AT", Arial, Helvetica, sans-serif;
 text-align:center;
 font-size:26px;
-color: white;
-text-shadow: 4px 4px 4px darkred;
-background-color:blue;
-margin-bottom:5px;
+color: #a6a6a6;
+text-shadow: 1px 1px 1px white;
+background-color:#141414;
 height:100px;
-border:1px solid black;
-
-
+border-bottom:10px solid #a91101;
 
 }
 
-/* .centered {
+#footer {
+    height:100px;
+    text-align:center;
+  
+    background-color: #a91101;
+    font-size:26px;
+    color:#a6a6a6;
+border-top:10px solid #141414;
+    }
 
-position:absolute;
-top: 35%;
-left: 50%;
-transform: translate(-50%, -50%);
 
-} */
 
 body{
 font-family: "Aviano Black";
@@ -59,6 +59,11 @@ background-color: #ecf0f1;
 
 }
 
+h2{
+margin:0;
+padding-top:30px;
+
+}
 
 
 #game-container{
@@ -79,14 +84,7 @@ font-size:26px;
 
 }
 
-#footer {
-height:100px;
-text-align:center;
-margin-top:5px;
-background-color:blue;
-font-size:26px;
-color:white;
-}
+
 
 #questionForm {
 height:550px;

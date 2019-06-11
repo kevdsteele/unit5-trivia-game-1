@@ -15,6 +15,7 @@ var unaswered =0;
 for (i=0; i<questions.length; i++) {
     var questionText = $("<p>");
     questionText.attr("id", "question"+i);
+    questionText.addClass("question");
     questionText.text(questions[i].Question);
     $("#questionForm").append(questionText);
     

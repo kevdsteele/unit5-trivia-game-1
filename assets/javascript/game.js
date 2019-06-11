@@ -14,7 +14,7 @@ var correct=0;
 var incorrect =0;
 var unanswered =0;
 
-var timer=15;
+var timer=60;
 var timerId;
 
 

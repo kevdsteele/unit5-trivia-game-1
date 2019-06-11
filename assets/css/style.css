@@ -100,7 +100,8 @@ overflow:auto;
 
 .question {
 font-size:30px;
-margin-bottom:5px;
+margin-top:5px;
+margin-bottom:25px;
 text-align:center;
 width:100%;
 }

@@ -114,6 +114,8 @@ padding: 10px 0px 10px 0px;
 
 }
 
+
+
 .radio {
 height:25px;
 }
@@ -143,8 +145,9 @@ font-size:18px;
 background-color: #141414;
 color:#a6a6a6;
 font-family: "Avengence Heroic Avenger AT", Arial, Helvetica, sans-serif;
-border-radius:10%;
+border-radius:5%;
 text-shadow: 1px 1px 1px #141414;
+padding-top:2px;
 }
 
 button:hover{
@@ -165,3 +168,8 @@ height:250px;
 padding-top:40px;
 padding-bottom:40px;
 }
+
+input:checked {
+background-color:#a6a6a6;
+}
+

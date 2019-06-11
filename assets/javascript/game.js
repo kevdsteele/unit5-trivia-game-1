@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+
+
+
 var questions = [ {Question: "Which MCU movie featured Spider-Man’s first appearance?", choices: ["Spider-Man: Homecoming","Avengers: Age of Ultron", "Iron Man 3", "Captain America: Civil War"], Answer: "Captain America: Civil War", GIFY:"https://media.giphy.com/media/KnjBhO9j4DVG8/giphy.gif"} , 
                  {Question: "Who played the Hulk before Mark Ruffalo?", choices: ["Liam Hemsworth","Gary Oldman", "Edward Norton", "Will Smith"], Answer: "Edward Norton", GIFY: "https://media.giphy.com/media/aS8ypUweGOXMA/giphy.gif"},
                  {Question: "What is the name of Thor’s hammer?", choices: ["Balder","Vanir", "Aesir", "Mjolnir"], Answer: "Mjolnir", GIFY: "https://media.giphy.com/media/xUPGGdn5TaL8Mfpwwo/giphy.gif"},
@@ -11,6 +14,10 @@ var correct=0;
 var incorrect =0;
 var unaswered =0;
 
+
+$("#play").on("click", function playGame () {
+
+$("#questionForm").empty();  
 
 for (i=0; i<questions.length; i++) {
   var questionDiv =$("<div>");
@@ -67,6 +74,8 @@ $("#submit").on("click", function() {
   
 });
   
+
+});
 
 
 
